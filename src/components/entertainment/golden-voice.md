@@ -1,0 +1,1 @@
+Do you love singing? We do! Karaoke is basically in our blood! For the new year, we would love to listen to you perform your favorite songs on stage! 

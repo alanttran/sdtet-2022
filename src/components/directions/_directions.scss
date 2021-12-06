@@ -1,0 +1,48 @@
+.sdtet-directions-container {
+  background-color: white;
+  padding-top: 1px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sdtet-directions-map-container {
+  margin: 10px 20px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sdtet-directions-text {
+  margin: 10px 10px 10px 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.sdtet-directions-text-bold {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 960px) {
+  .sdtet-directions-map-container {
+    margin: 10px;
+    justify-content: center;
+  }
+  .sdtet-directions-text-container {
+    text-align: center;
+  }
+  .sdtet-directions-text {
+    margin: 10px;
+    width: 475px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .google-map {
+    width: 350px;
+    height: 350px;
+  }
+  .sdtet-directions-text {
+    width: 350px;
+  }
+}

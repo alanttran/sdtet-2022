@@ -1,0 +1,81 @@
+@import "../../theme/colors";
+
+.sdtet-navigation {
+  height: 50px;
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: #dc9c44;
+}
+
+#sdtet-nav-logo img {
+  transition: 0.3s ease;
+  &:hover {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    transition: 0.3s ease;
+  }
+}
+
+.sdtet-navigation__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-right: 15px;
+  max-width: 50%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 0; // override vuetify
+  a {
+    color: black !important;
+    font-family: "Segoe UI", "Roboto";
+    margin-left: 8px;
+    margin-right: 8px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sdtet-navigation-menu {
+  display: none;
+  margin-right: 30px;
+}
+
+.sdtet-logo {
+  height: 30px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .sdtet-navigation__links {
+    display: none;
+  }
+
+  .sdtet-navigation-menu {
+    display: block;
+  }
+
+  .sdtet-navigation {
+    justify-content: end;
+  }
+}
+
+#sdtet-mobile-title {
+  display: none;
+  padding-left: 16px;
+  flex: auto;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  @media screen and (max-width: 960px) {
+    display: flex;
+  }
+}

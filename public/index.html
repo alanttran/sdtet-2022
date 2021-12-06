@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400i,600i|Roboto:300,400,500,700|Material+Icons"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>San Diego Tết Festival</title>
+
+    <!-- open graph meta tags -->
+    <meta name="description" content="Lunar New Year" />
+    <meta name="author" content="VAYA" />
+    <meta
+      property="og:image"
+      content="https://s3-us-west-1.amazonaws.com/sdtet/tet-festival-general.jpeg"
+    />
+    <meta
+      property="og:description"
+      content="The Tết Festival is the largest Vietnamese New Year event in San Diego and the second largest event of its kind in Southern California. The Festival is one of the most anticipated annual events for the Vietnamese community in San Diego. Highlights of the festival include the Lion Dances, Miss Vietnam San Diego Pageant, Golden Voice singing competition, the Cultural Village and various other performances."
+    />
+    <meta property="og:url" content="http://www.sdtet.com" />
+    <meta property="og:title" content="San Diego Tết Festival" />
+
+    <!-- ***************************************** Global site tag (gtag.js) - Google Analytics ***************************************** -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-109835029-1"
+    ></script>
+    <meta
+      name="google-site-verification"
+      content="f2nqJTy8u5c0AJI0X5PeFu1_k2SFV_8Vt62Ohi5K1Aw"
+    />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-109835029-1");
+    </script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WZ6FDF9");
+    </script>
+    <!-- *********************************** End Google Tag Manager ***************************************** -->
+    <!-- *********************************** Facebook Pixel Code *****************************************-->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "258883711594751");
+      fbq("track", "PageView");
+      fbq("track", "ViewContent");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=258883711594751&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- ***************************************** End Facebook Pixel Code ***************************************** -->
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but sdtet.com doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

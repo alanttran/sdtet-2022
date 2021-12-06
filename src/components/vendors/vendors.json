@@ -1,0 +1,23 @@
+{
+	"text":[
+		"Dear Prospective Vendors,",
+		"Once again the Lunar New Year Festival has come! This year, we hope to bring you another fun, successful and profitable experience during our 3-day festival. Our previous vendors have made huge profits, and we would love to have you along for the ride.",
+		"With over 10 years in the running, we have become very well-known to the San Diego community as well as our neighboring cities. Our annual festival attracts well over 20,000 people of different cultures and ethnicities, making it one of the largest Lunar New Year Festivals in Southern California.",
+		"Don't hesitate to contact us if you have any questions. We'll make sure that the upcoming Lunar New Year will be an amazing experience for you.",
+		"VAYA"
+	],
+	"email": "vendor@sdtet.com",
+	"foodApplicationURL": "https://forms.gle/xqTAGXYbmvyaZHmf7",
+	"vendorApplicationURL": "https://forms.gle/roLsyAuY2LiVcgoa9",
+	"isAppOpen": false,
+	"foodAvail": false,
+	"gameAvail": true,
+	"infoAvail": true,
+	"nonProfitAvail": true,
+	"foodPrice": 850,
+	"foodExclusivePrice": 150,
+	"gamePrice": 500,
+	"infoPrice": 400,	
+	"nonProfitPrice": 250,
+	"deposit": 200
+}

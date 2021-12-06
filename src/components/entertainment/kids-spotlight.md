@@ -1,0 +1,1 @@
+The new year is a celebration for everyone as well as the youth! It is probably one of the few times a year that they are able to learn about their culture in an exciting way!
