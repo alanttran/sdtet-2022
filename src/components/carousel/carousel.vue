@@ -112,6 +112,42 @@
           <v-card
             color="#f0d6b1"
             height="150"
+            href=" https://bit.ly/33gp7c9"
+            outlined
+            target="_blank"
+            rounded
+            width="150"
+            hover="true"
+            class="ma-2"
+          >
+            <p>
+              <v-icon color="#362b20" style="font-size: 70px"
+                >mdi-kabaddi</v-icon
+              >
+            </p>
+            <p>2022 Step Up Application</p>
+          </v-card>
+          <v-card
+            color="#f0d6b1"
+            height="150"
+            href="https://bit.ly/3rY3sjl"
+            outlined
+            target="_blank"
+            rounded
+            width="150"
+            hover="true"
+            class="ma-2"
+          >
+            <p>
+              <v-icon color="#362b20" style="font-size: 70px"
+                >mdi-human-female-dance</v-icon
+              >
+            </p>
+            <p>2022 Step Up Jr Application</p>
+          </v-card>
+          <v-card
+            color="#f0d6b1"
+            height="150"
             href="https://docs.google.com/forms/d/1_xosbGIkbMqFjLj7r69GHUpr5ZKO1ByDXu6MW65KbsA/viewform?ts=611dc169"
             outlined
             target="_blank"
