@@ -26,6 +26,7 @@
         <v-flex xs12 md7 lg7 class="sdtet-text-align-center">
           <h1 class="sdtet-h1-spacer">&nbsp;</h1>
           <h2>{{ sponsorData.slogan }}</h2>
+          <br />
           <v-layout
             class="sdtet-sponsors-logos-container"
             row
@@ -34,12 +35,11 @@
           >
             <a
               v-for="sponsor in sponsors"
-              :style="{ order: sponsor.list_order }"
               :key="sponsor.id"
-              :href="sponsor.url"
+              :href="sponsor.href"
               target="_blank"
             >
-              <img class="ma-3" :src="sponsor.logo_image_link" />
+              <img class="ma-3" :src="sponsor.image" :alt="sponsor.name" />
             </a>
           </v-layout>
         </v-flex>
@@ -49,9 +49,9 @@
 </template>
 
 <script type="text/javascript">
-import axios from "axios";
 import data from "./sponsors.json";
 import markdown from "./sponsors.md";
+import Airtable from "airtable";
 
 export default {
   data() {
@@ -61,20 +61,30 @@ export default {
       sponsorText: markdown,
     };
   },
-  created() {
-    axios
-      .get("https://admin.sdtet.com/php_file/get_sponsors.php")
-      .then((response) => {
-        // from db - only show active sponsors
-        for (var key in response.data) {
-          if (response.data[key].active === "1") {
-            this.sponsors.push(response.data[key]);
-          }
-        }
-        //console.log(this.sponsors)
+  mounted() {
+    const base = new Airtable({ apiKey: "keyOHQYdXt9naCeJk" }).base(
+      "appDB8Qv2eJZiHZnY"
+    );
+    base("Sponsors")
+      .select({
+        view: "Grid view",
+        fields: ["Name", "href", "Attachments"],
+        filterByFormula: "NOT({Active} = '')",
       })
-      .catch((e) => {
-        console.log(e);
+      .firstPage((err, records) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        records.forEach((record) => {
+          //console.log("Retrieved", record);
+          this.sponsors.push({
+            id: record.id,
+            name: record.get("Name"),
+            href: record.get("href"),
+            image: record.fields.Attachments[0].url,
+          });
+        });
       });
   },
 };

@@ -122,7 +122,7 @@
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
-                >mdi-kabaddi</v-icon
+                >mdi-dance-ballroom</v-icon
               >
             </p>
             <p>2022 Step Up Application</p>

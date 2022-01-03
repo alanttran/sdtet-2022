@@ -48,9 +48,9 @@
     <!-- <div style="max-width: 750px; margin: 0 auto">
       <iframe width="100%" height="415" src="https://www.youtube.com/embed/HJZmvB7tIOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div><br/> -->
-    <!-- <h1 class="sdtet-text-align-center">Congratulations!</h1> -->
+    <h1 class="sdtet-text-align-center">2022 Contestants!</h1>
 
-    <v-container style="display: none" mb-4>
+    <v-container mb-4>
       <v-layout id="contestants" row wrap>
         <v-flex
           style="display: flex; flex-direction: column"
@@ -66,14 +66,14 @@
             style="flex: auto; display: flex; flex-direction: column"
           >
             <v-img
-              :src="contestant.main_image_link"
+              :src="contestant.image"
               height="300px"
               style="background-position: center top; flex: none"
             >
               <v-btn
                 class="msvn-vote-button"
                 v-if="pageantData.voting"
-                :href="contestant.fb_link"
+                :href="contestant.facebook"
                 target="_blank"
                 round
                 small
@@ -88,8 +88,7 @@
             >
               <div>
                 <h4 class="title mb-3">
-                  {{ contestant.pageant_number }}. {{ contestant.first_name }}
-                  {{ contestant.last_name }}
+                  {{ contestant.number }}. {{ contestant.name }}
                 </h4>
                 <h4 class="title mb-3" style="color: red">
                   {{ contestant.title }}
@@ -108,7 +107,7 @@
 </template>
 
 <script type="text/javascript">
-import axios from "axios";
+import Airtable from "airtable";
 import data from "./pageant.json";
 import pageantText from "./pageant.md";
 
@@ -120,23 +119,56 @@ export default {
       pageantData: data,
     };
   },
-  created() {
-    axios
-      .get("https://admin.sdtet.com/php_file/get_pageant_contestants.php")
-      .then((response) => {
-        // JSON responses are automatically parsed.
-        this.contestants = response.data;
-        //console.log(response.data)
+  mounted() {
+    const base = new Airtable({ apiKey: "keyOHQYdXt9naCeJk" }).base(
+      "appDB8Qv2eJZiHZnY"
+    );
+    base("Pageant")
+      .select({
+        view: "Grid view",
+        fields: [
+          "Name",
+          "Number",
+          "School",
+          "Title",
+          "Image",
+          "Bio",
+          "Facebook",
+        ],
+        filterByFormula: "NOT({Active} = '')",
       })
-      .catch((e) => {
-        console.log(e);
+      .firstPage((err, records) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        records.forEach((record) => {
+          console.log("Retrieved", record);
+          this.contestants.push({
+            id: record.id,
+            name: record.get("Name"),
+            number: record.get("Number"),
+            school: record.get("School"),
+            bio: record.get("Bio"),
+            image: record.fields.Image[0].url,
+          });
+        });
       });
-
+  },
+  created() {
+    // axios
+    //   .get("https://admin.sdtet.com/php_file/get_pageant_contestants.php")
+    //   .then((response) => {
+    //     // JSON responses are automatically parsed.
+    //     this.contestants = response.data;
+    //     //console.log(response.data)
+    //   })
+    //   .catch((e) => {
+    //     console.log(e);
+    //   });
     var moment = require("moment");
     var todaysdate = moment();
-
     var signUpDate = moment(this.pageantData.signups_close_date);
-
     this.signUpTimeLeft = signUpDate.diff(todaysdate, "days");
   },
 };
