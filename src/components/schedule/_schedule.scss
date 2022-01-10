@@ -1,20 +1,18 @@
-$sdtet-schedule-text-shadow: -1px -1px 2px white,
-    1px -1px 2px white,
-    -1px 1px 2px white,
-    1px 1px 2px white;
+$sdtet-schedule-text-shadow: -1px -1px 2px white, 1px -1px 2px white,
+  -1px 1px 2px white, 1px 1px 2px white;
 
 .sdtet-schedule-background {
-position: relative;
+  position: relative;
 }
 
-@mixin schedule-image-font{
+@mixin schedule-image-font {
   font-weight: 600;
   font-size: 22px;
   -webkit-text-stroke: 1px #263238;
-  -webkit-text-fill-color: #FFC400;
+  -webkit-text-fill-color: #ffc400;
 }
 
-@mixin schedule-background-image{
+@mixin schedule-background-image {
   position: absolute;
   z-index: 0;
 
@@ -23,16 +21,16 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-1{
-  background-image: url('../../assets/new-wave-tour.png');
+.sdtet-schedule-image-1 {
+  //background-image: url('../../assets/new-wave-tour.png');
   background-size: contain;
   top: calc(50% + 5px);
   left: 40px;
   width: 500px;
   height: 250px;
   @include schedule-background-image;
-  &:before{
-    content:"New Wave Tour";
+  &:before {
+    content: "New Wave Tour";
     position: absolute;
     bottom: -30px;
     left: 50px;
@@ -41,8 +39,8 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-2{
-  background-image: url('../../assets/vvhatever.jpg');
+.sdtet-schedule-image-2 {
+  //background-image: url('../../assets/vvhatever.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 105%;
@@ -52,8 +50,8 @@ position: relative;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  &:before{
-    content:"V.Vhatever";
+  &:before {
+    content: "V.Vhatever";
     position: absolute;
     bottom: -35px;
     left: 0px;
@@ -61,8 +59,8 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-3{
-  background-image: url('../../assets/lilybui.jpg');
+.sdtet-schedule-image-3 {
+  //background-image: url('../../assets/lilybui.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 125%;
@@ -72,8 +70,8 @@ position: relative;
   height: 100px;
   border-radius: 50%;
   @include schedule-background-image;
-  &:before{
-    content:"Lily Bee";
+  &:before {
+    content: "Lily Bee";
     position: absolute;
     bottom: -35px;
     left: 11px;
@@ -81,8 +79,8 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-4{
-  background-image: url('../../assets/BAO.jpg');
+.sdtet-schedule-image-4 {
+  //background-image: url('../../assets/BAO.jpg');
   background-repeat: no-repeat;
   background-position: center 10%;
   background-size: 300%;
@@ -92,8 +90,8 @@ position: relative;
   height: 100px;
   border-radius: 50%;
   @include schedule-background-image;
-  &:before{
-    content:"BAO";
+  &:before {
+    content: "BAO";
     position: absolute;
     bottom: -35px;
     left: 27px;
@@ -101,17 +99,17 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-5{
-  background-image: url('../../assets/stepupdance.png');
+.sdtet-schedule-image-5 {
+  background-image: url("../../assets/stepupdance.png");
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   top: 16%;
   left: 176px;
   width: 200px;
   height: 150px;
   @include schedule-background-image;
-  &:before{
-    content:"Step Up Dance Competition";
+  &:before {
+    content: "Step Up Dance Competition";
     position: absolute;
     bottom: 50px;
     left: 50px;
@@ -119,17 +117,17 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-6{
-  background-image: url('../../assets/lion-dancing.png');
+.sdtet-schedule-image-6 {
+  background-image: url("../../assets/lion-dancing.png");
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   top: 207px;
   right: 20%;
   width: 250px;
   height: 212px;
   @include schedule-background-image;
-  &:before{
-    content:"Lion Dancing";
+  &:before {
+    content: "Lion Dancing";
     position: absolute;
     bottom: 0px;
     right: 50px;
@@ -137,17 +135,17 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-7{
-  background-image: url('../../assets/black-leather-couch.png');
+.sdtet-schedule-image-7 {
+  background-image: url("../../assets/black-leather-couch.png");
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   top: 100px;
   left: 106px;
   width: 250px;
   height: 170px;
   @include schedule-background-image;
-  &:before{
-    content:"Black Leather Couch";
+  &:before {
+    content: "Black Leather Couch";
     position: absolute;
     bottom: 0px;
     left: 31px;
@@ -155,17 +153,17 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-8{
-  background-image: url('../../assets/green-lantern.png');
+.sdtet-schedule-image-8 {
+  //background-image: url('../../assets/green-lantern.png');
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   top: calc(39% + 5px);
   right: 200px;
   width: 250px;
   height: 415px;
   @include schedule-background-image;
-  &:before{
-    content:"Green Lantern: Legacy";
+  &:before {
+    content: "Green Lantern: Legacy";
     position: absolute;
     bottom: 0px;
     left: 31px;
@@ -173,17 +171,17 @@ position: relative;
   }
 }
 
-.sdtet-schedule-image-9{
-  background-image: url('../../assets/gia-huy.png');
+.sdtet-schedule-image-9 {
+  //background-image: url('../../assets/gia-huy.png');
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   bottom: 50px;
   left: 200px;
   width: 250px;
   height: 415px;
   @include schedule-background-image;
-  &:before{
-    content:"Gia Huy";
+  &:before {
+    content: "Gia Huy";
     position: absolute;
     bottom: 0px;
     left: 50px;
@@ -191,67 +189,66 @@ position: relative;
   }
 }
 
-
 .sdtet-schedule-container {
-    text-align: center;
-    //height: 1700px;
-    @media screen and (max-width: 960px) {
-        height: auto;
-    }
+  text-align: center;
+  //height: 1700px;
+  @media screen and (max-width: 960px) {
+    height: auto;
+  }
 }
 
 .sdtet-schedule-divider {
-    border-bottom: 2px solid red;
+  border-bottom: 2px solid red;
 }
 
 .sdtet-schedule-spacer {
-    height: 50px;
-    flex: 1 1 100%;
+  height: 50px;
+  flex: 1 1 100%;
 }
 
 .sdtet-schedule-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
-    z-index: 4;
-    position: relative;
-    width:100%;
-    max-width: 1300px;
-    left: calc(50% - 650px);
-    align-items: center;
-    text-shadow: $sdtet-schedule-text-shadow;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 4;
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  left: calc(50% - 650px);
+  align-items: center;
+  text-shadow: $sdtet-schedule-text-shadow;
 
-    @media screen and (max-width: 1279px) {
-        position: static;
-    }
+  @media screen and (max-width: 1279px) {
+    position: static;
+  }
 }
 
 .sdtet-schedule-divider {
-    flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 // @supports (display:grid){
 // 	.sdtet-schedule-grid{
-// 		display: grid !important;	
-// 		grid-template-columns: 400px 200px 400px;	
+// 		display: grid !important;
+// 		grid-template-columns: 400px 200px 400px;
 // 		grid-gap: 10px;
 // 	}
 // 	.sdtet-schedule-spacer{
 // 		grid-column-start: 1;
-// 		grid-column-end: 4;		
+// 		grid-column-end: 4;
 // 	}
 // 	.sdtet-schedule-divider{
 // 		grid-column-start: 1;
-// 		grid-column-end: 4;		
+// 		grid-column-end: 4;
 // 	}
 // }
 .sdtet-schedule-title {
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    align-self: flex-end;
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  align-self: flex-end;
 }
 
 @media screen and (max-width: 500px) {
@@ -259,7 +256,6 @@ position: relative;
     font-size: 1.25em;
   }
 }
-
 
 @media screen and (max-width: 400px) {
   .sdtet-schedule-title {
@@ -274,18 +270,17 @@ position: relative;
 .sdtet-schedule-date,
 .sdtet-schedule-main-stage,
 .sdtet-schedule-cultural-village {
-    align-self: center;
+  align-self: center;
 }
 
 .sdtet-schedule-date {
-    font-weight: 600;
+  font-weight: 600;
 }
 
-
 .sdtet-schedule-main-stage {
-    text-align: right;
+  text-align: right;
 }
 
 .sdtet-schedule-cultural-village {
-    text-align: left;
+  text-align: left;
 }

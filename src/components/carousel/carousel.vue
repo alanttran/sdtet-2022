@@ -43,14 +43,14 @@
         >
           <v-card
             color="#f0d6b1"
-            height="150"
+            min-height="150"
             href="https://sdtet.s3.us-west-1.amazonaws.com/documents/VAYA_Tet_Sponsorship_2022.pdf"
             outlined
             target="_blank"
             rounded
             width="150"
             hover="true"
-            class="ma-2"
+            class="ma-2 pa-2"
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px">mdi-crown</v-icon>
@@ -59,14 +59,14 @@
           </v-card>
           <v-card
             color="#f0d6b1"
-            height="150"
+            min-height="150"
             href="https://bit.ly/3C0penX"
             outlined
             target="_blank"
             rounded
             width="150"
             hover="true"
-            class="ma-2"
+            class="ma-2 pa-2"
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -77,14 +77,14 @@
           </v-card>
           <v-card
             color="#f0d6b1"
-            height="150"
+            min-height="150"
             href="https://docs.google.com/forms/d/e/1FAIpQLSeS0ymzHzoZEWQHzMTYqrXXDCY00LR_b2CYterqOS_gfEvhlw/viewform"
             outlined
             target="_blank"
             rounded
             width="150"
             hover="true"
-            class="ma-2"
+            class="ma-2 pa-2"
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px">mdi-food</v-icon>
@@ -93,14 +93,14 @@
           </v-card>
           <v-card
             color="#f0d6b1"
-            height="150"
+            min-height="150"
             href="https://docs.google.com/forms/d/e/1FAIpQLSdqJkmjyTp703_6QinpAqiMzz_DJiTOMIpvoBbOlciPTJsomg/viewform"
             outlined
             target="_blank"
             rounded
             width="150"
             hover="true"
-            class="ma-2"
+            class="ma-2 pa-2"
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -111,14 +111,14 @@
           </v-card>
           <v-card
             color="#f0d6b1"
-            height="150"
+            min-height="150"
             href=" https://bit.ly/33gp7c9"
             outlined
             target="_blank"
             rounded
             width="150"
             hover="true"
-            class="ma-2"
+            class="ma-2 pa-2"
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -129,39 +129,39 @@
           </v-card>
           <v-card
             color="#f0d6b1"
-            height="150"
+            min-height="150"
             href="https://bit.ly/3rY3sjl"
             outlined
             target="_blank"
             rounded
             width="150"
             hover="true"
-            class="ma-2"
+            class="ma-2 pa-2"
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
                 >mdi-human-female-dance</v-icon
               >
             </p>
-            <p>2022 Step Up Jr Application</p>
+            <p>2022 Kids Got Talent</p>
           </v-card>
           <v-card
             color="#f0d6b1"
-            height="150"
-            href="https://docs.google.com/forms/d/1_xosbGIkbMqFjLj7r69GHUpr5ZKO1ByDXu6MW65KbsA/viewform?ts=611dc169"
+            min-height="150"
+            href="https://www.signupgenius.com/go/10c0e4babae2ea3fc1-sandiego"
             outlined
             target="_blank"
             rounded
             width="150"
             hover="true"
-            class="ma-2"
+            class="ma-2 pa-2"
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
                 >mdi-face-man-shimmer</v-icon
               >
             </p>
-            <p>2022 Staff Application</p>
+            <p>2022 Volunteer Signups</p>
           </v-card>
         </div>
         <v-alert
@@ -201,34 +201,10 @@
       <h1 style="text-shadow: none; text-align: center">
         Attendee Information
       </h1>
+      <p>Updated: 1/9/2022</p>
       <p>The 2022 San Diego Tet Festival will operate under the following COVID-19 protocols recommended by San Diego County, City of San Diego and California Department of Public Health (CDPH) for an <a target="_blank" href="https://covid19.ca.gov/mega-events/#outdoor-events">Outdoor Mega-event</a>.</p>
       <h2 style="text-shadow: none">Required to Enter</h2>
-      <p>Participants 18 years of age and over will be required to be <a target="_blank" href="https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19-Public-Health-Recommendations-for-Fully-Vaccinated-People.aspx">fully vaccinated</a> or provide a negative COVID-19 test to enter.</p>
-      <h3>Provide <u>proof of vaccination</u> + ID</h3><br/>
-      <p>Acceptable options for <a target="_blank" href="https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/Vaccine-Record-Guidelines-Standards.aspx#">proof of vaccination</a> such as...
-        <ul>
-          <li><abbr title="Center of Disease Control">CDC</abbr> COVID-19 vaccination card (white card)</li>
-          <li><abbr title="World Health Organization">WHO</abbr> vaccine record card (yellow card)</li>
-          <li><abbr title="California Department of Public Health">CDPH</abbr> COVID-19 digital vaccination record</li>
-        </ul>
-      </p>
-      <p>Vaccination proof should include the person’s name, type of COVID-19 vaccine, and the date of the doses
-administered. The person can show the vaccination card, a photo of the card as a separate document, or a
-photo of the card stored on a phone or electronic device.</p>
-      <h3>OR... a <u>negative COVID-19 test</u> + ID</h3><br/>
-      <p>The following are accepted:</p>
-      <ul>
-        <li>Printed document from your test provider or laboratory</li>
-        <li>An email or text message displayed on your phone from your test provider or laboratory</li>
-      </ul><br/>
-      <p>Results should include name of person tested, type of test, and date of negative test result. For PCR, the date of negative result must be within the prior 72 hours. For antigen, the date of negative result must be within the prior 24 hours.</p>
-      
-      <h3>Paired w <a target="_blank" href="https://www.coveredca.com/documents-to-confirm-eligibility/identity/">proof of identity with photo</a> such as...</h3>
-      <ul>
-        <li>Drivers License</li>
-        <li>Work/School ID</li>
-        <li>Passport</li>
-      </ul>
+      <div v-html="covidText"></div>
       <br/>
       <h2 style="text-shadow: none">COVID-19 Safety</h2>
       <p>We are fully committed to keeping everyone as safe as possible. We are also providing...</p>
@@ -236,6 +212,7 @@ photo of the card stored on a phone or electronic device.</p>
         <ul>
           <li>Hand sanitizer stations</li>
           <li>Masks for those who need them</li>
+          <li>All vendors are required to be fully vaccinated</li>
         </ul>
       </p>
       
@@ -256,9 +233,12 @@ photo of the card stored on a phone or electronic device.</p>
 </template>
 
 <script>
+import covidText from "./covid.md";
+
 export default {
   data() {
     return {
+      covidText: covidText,
       items: [
         {
           src: "./static/carousel/blossoms-banner.png",
