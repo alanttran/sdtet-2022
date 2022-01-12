@@ -30,7 +30,18 @@
 
     <div style="overflow: hidden; position: relative">
       <div style="text-align: center">
-        <h1 style="text-shadow: none">We're back for 2022! Apply below!</h1>
+        <v-alert
+          style="max-width: 960px; margin: 16px auto"
+          border="top"
+          colored-border
+          type="info"
+          elevation="2"
+        >
+          IMPORTANT: Per state of California, San Diego County and City's public
+          health regulations, we ask that all attendees ages 2+ be fully
+          vaccinated or have received a negative COVID-19 test. Details
+          <a href="#covid">below</a>
+        </v-alert>
         <div
           style="
             padding: 2rem;
@@ -49,8 +60,8 @@
             target="_blank"
             rounded
             width="150"
-            hover="true"
             class="ma-2 pa-2"
+            hover
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px">mdi-crown</v-icon>
@@ -65,8 +76,8 @@
             target="_blank"
             rounded
             width="150"
-            hover="true"
             class="ma-2 pa-2"
+            hover
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -83,8 +94,8 @@
             target="_blank"
             rounded
             width="150"
-            hover="true"
             class="ma-2 pa-2"
+            hover
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px">mdi-food</v-icon>
@@ -99,8 +110,8 @@
             target="_blank"
             rounded
             width="150"
-            hover="true"
             class="ma-2 pa-2"
+            hover
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -117,8 +128,8 @@
             target="_blank"
             rounded
             width="150"
-            hover="true"
             class="ma-2 pa-2"
+            hover
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -135,8 +146,8 @@
             target="_blank"
             rounded
             width="150"
-            hover="true"
             class="ma-2 pa-2"
+            hover
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -153,8 +164,8 @@
             target="_blank"
             rounded
             width="150"
-            hover="true"
             class="ma-2 pa-2"
+            hover
           >
             <p>
               <v-icon color="#362b20" style="font-size: 70px"
@@ -164,19 +175,7 @@
             <p>2022 Volunteer Signups</p>
           </v-card>
         </div>
-        <v-alert
-          style="max-width: 960px; margin: 0 auto"
-          border="top"
-          colored-border
-          type="info"
-          elevation="2"
-        >
-          IMPORTANT: Per state of California, San Diego County and City's public
-          health regulations, we ask that
-          <u>all vendors be vaccinated against COVID-19</u> or provide
-          <u>proof of a negative COVID-19 PCR test</u>
-          taken within 72 hours of the event.
-        </v-alert>
+
         <br />
         <p>Questions? Email us at <b>info@sdtet.com</b></p>
         <p style="text-align: center">
@@ -196,49 +195,13 @@
         </p>
       </div>
     </div>
-
-    <div style="max-width: 960px; margin: 0 auto; background: white; padding: 0 3rem 3rem 3rem;">
-      <h1 style="text-shadow: none; text-align: center">
-        Attendee Information
-      </h1>
-      <p>Updated: 1/9/2022</p>
-      <p>The 2022 San Diego Tet Festival will operate under the following COVID-19 protocols recommended by San Diego County, City of San Diego and California Department of Public Health (CDPH) for an <a target="_blank" href="https://covid19.ca.gov/mega-events/#outdoor-events">Outdoor Mega-event</a>.</p>
-      <h2 style="text-shadow: none">Required to Enter</h2>
-      <div v-html="covidText"></div>
-      <br/>
-      <h2 style="text-shadow: none">COVID-19 Safety</h2>
-      <p>We are fully committed to keeping everyone as safe as possible. We are also providing...</p>
-      <p>
-        <ul>
-          <li>Hand sanitizer stations</li>
-          <li>Masks for those who need them</li>
-          <li>All vendors are required to be fully vaccinated</li>
-        </ul>
-      </p>
-      
-      <p>
-        Sources:
-        <ul>
-          <li><a target="_blank"
-          href="https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/2019-nCoV/reopening.html"
-          >County of San Diego Safe Reopening</a
-        ></li>
-        <li><a href="https://covid19.ca.gov/mega-events/#outdoor-events" target="_blank">California Department of Public Health</a></li>
-        </ul>
-        
-        
-      </p>
-    </div>
   </div>
 </template>
 
 <script>
-import covidText from "./covid.md";
-
 export default {
   data() {
     return {
-      covidText: covidText,
       items: [
         {
           src: "./static/carousel/blossoms-banner.png",

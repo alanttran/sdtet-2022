@@ -1,8 +1,9 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
+import Vue from "vue";
+import Vuetify from "vuetify/lib";
 
 import {
   VApp,
+  VMain,
   VNavigationDrawer,
   VImg,
   VFooter,
@@ -17,12 +18,13 @@ import {
   VIcon,
   VGrid,
   VToolbar,
-  transitions
-} from 'vuetify'
+  transitions,
+} from "vuetify";
 
 Vue.use(Vuetify, {
   components: {
     VApp,
+    VMain,
     VNavigationDrawer,
     VFooter,
     VImg,
@@ -37,12 +39,12 @@ Vue.use(Vuetify, {
     VCard,
     VGrid,
     VToolbar,
-    transitions
+    transitions,
   },
-})
+});
 
 export default new Vuetify({
   icons: {
-    iconfont: 'mdi',
+    iconfont: "mdi",
   },
 });

@@ -1,10 +1,10 @@
 <template>
-  <div id="sdtet-sponsors-section" class="sdtet-container">
+  <div id="sponsors" class="sdtet-container">
     <div class="sdtet-divider"></div>
     <div class="ml-5 mr-5 mb-5">
       <v-layout row wrap>
         <v-flex xs12 md5 lg5>
-          <h1 id="sponsors">Sponsors</h1>
+          <h1>Sponsors</h1>
           <p v-if="sponsorData.sponsorSignUp">
             <v-btn
               color="#b5741c"

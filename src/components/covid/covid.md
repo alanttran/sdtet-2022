@@ -12,7 +12,7 @@ If you provide test results for entry, the test must have been conducted in the 
 - 2 days for a PCR test.
 
 <br/>
-<p>Self-attestation to verify vaccination status or negative test results will not be accepted.</p>
+<p>Self-attestation to verify vaccination status or negative test results will NOT be accepted.</p>
 
 Attendees age 18 and older are to provide identification. You may be asked to show identification that confirms you are the person:
 

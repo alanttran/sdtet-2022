@@ -60,8 +60,8 @@
                 target="_blank"
                 rounded
                 width="150"
-                hover="true"
                 class="ma-2"
+                hover
               >
                 <p>
                   <v-icon color="#362b20" style="font-size: 70px"
@@ -78,8 +78,8 @@
                 target="_blank"
                 rounded
                 width="150"
-                hover="true"
                 class="ma-2"
+                hover
               >
                 <p>
                   <v-icon color="#362b20" style="font-size: 70px"
@@ -93,8 +93,8 @@
               IMPORTANT: Per state of California, San Diego County and City's
               public health regulations, we ask that
               <u>all vendors be vaccinated against COVID-19</u> or provide
-              <u>proof of a negative COVID-19 PCR test</u>
-              taken within 72 hours of the event.
+              <u>proof of a negative COVID-19 test</u>. Details
+              <a href="#covid">above</a>.
             </p>
           </div>
         </v-flex>

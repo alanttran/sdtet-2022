@@ -41,7 +41,7 @@
     <div class="sdtet-text-align-center">
       <img
         alt="Miss Vietnam San Diego Logo"
-        style=""
+        style="width:100%"
         src="../../assets/msvn-court.png"
       />
     </div>
@@ -49,21 +49,25 @@
       <iframe width="100%" height="415" src="https://www.youtube.com/embed/HJZmvB7tIOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div><br/> -->
     <h1 class="sdtet-text-align-center">2022 Contestants!</h1>
-    <p class="sdtet-text-align-center">Miss People's Choice Rules:
+<div style="margin-left: 12%">
+    <p>Miss People's Choice Rules:
 <ol>
   <li>Like the <a target="_blank" href="https://www.facebook.com/missvietnamsandiego">Miss Vietnam San Diego page</a></li>
   <li>Like your favorite contestants' photos on FB & IG (links below)</li>
 </ol>
+<br/>
 The contestant with the most votes (FB+IG) by 7:00 PM on pageant day (February 5) will be Miss People's Choice*! <br/>
-<small>* Miss People's Choice cannot part of final Royal Court</small>
+<small>* If the front-runner for Miss People’s Choice is crowned in the Royal Court, the title will be awarded to the contestant with the next highest number of votes outside of Royal Court.</small>
 </p>
+</div>
 <p class="sdtet-text-align-center">Every vote counts!</p>
+
     <v-container mb-4>
       <v-layout id="contestants" row wrap>
         <v-flex
-          style="display: flex; flex-direction: column"
           v-for="contestant in contestants"
           :key="contestant.id"
+          
           xs12
           sm6
           md4
@@ -71,11 +75,13 @@ The contestant with the most votes (FB+IG) by 7:00 PM on pageant day (February 5
         >
           <v-card
             class="ma-4"
+            min-height="600px"
             style="flex: auto; display: flex; flex-direction: column"
           >
             <v-img
               :src="contestant.image"
               height="300px"
+              aspect-ratio="1"
               style="background-position: center top; flex: none"
             >
             </v-img>

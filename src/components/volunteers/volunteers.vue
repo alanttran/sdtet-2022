@@ -1,10 +1,10 @@
 <template>
-  <div id="sdtet-volunteers-section" class="sdtet-container">
+  <div id="volunteers" class="sdtet-container">
     <div class="sdtet-divider"></div>
     <div class="ml-5 mr-5">
       <v-layout row wrap>
         <v-flex xs12 md6 order-md2>
-          <h1 id="volunteers">Volunteers</h1>
+          <h1>Volunteers</h1>
           <p v-if="volunteerData.signups_open">
             <strong>We are currently looking for volunteers!</strong>
           </p>
@@ -31,7 +31,7 @@
                 <span class="sdtet-text-red-bold">Signups are open again!</span>
               </p> -->
               <a target="_blank" v-bind:href="volunteerData.signup_form_url">
-                <v-btn round color="#f0d6b1">2022 Volunteer Signup</v-btn>
+                <v-btn rounded color="#f0d6b1">2022 Volunteer Signup</v-btn>
               </a>
             </div>
 
@@ -45,8 +45,8 @@
                 target="_blank"
                 rounded
                 width="175"
-                hover="true"
                 class="ma-2"
+                hover
               >
                 <p>
                   <v-icon color="#362b20" style="font-size: 70px"
@@ -64,8 +64,8 @@
                 target="_blank"
                 rounded
                 width="150"
-                hover="true"
                 class="ma-2"
+                hover
               >
                 <p>
                   <v-icon color="#362b20" style="font-size: 70px"

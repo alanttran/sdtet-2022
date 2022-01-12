@@ -17,7 +17,7 @@
         <a href="#volunteers" v-smooth-scroll>Volunteers</a>
       </li>
       <li><a href="#sponsors" v-smooth-scroll>Sponsors</a></li>
-      <li><a href="#about" v-smooth-scroll>About</a></li>
+      <!-- <li><a href="#about" v-smooth-scroll>About</a></li> -->
       <li><a href="#contact" v-smooth-scroll>Contact</a></li>
       <li>
         <a
@@ -29,9 +29,11 @@
     </ul>
     <div class="sdtet-navigation-menu" style="padding-top: 3px">
       <v-menu offset-y>
-        <v-btn icon large slot="activator">
-          <v-icon large color="black darken-1">menu</v-icon>
-        </v-btn>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn v-bind="attrs" v-on="on" icon large>
+            <v-icon large color="black darken-1">menu</v-icon>
+          </v-btn>
+        </template>
         <v-list>
           <v-list-tile>
             <a href="#schedule" v-smooth-scroll

@@ -6,31 +6,33 @@
       <br />
       <h2>
         Friday Feb 4th<br />
-        5:00PM - 10:00PM
+        <small>5:00PM - 10:00PM</small>
       </h2>
       <v-container>
         <v-row :key="fri.id" v-for="fri in friday">
-          <v-col md="4" style="text-align: right">{{ fri.time }}</v-col>
+          <v-col sm="4" md="4" style="text-align: right">{{ fri.time }}</v-col>
           <v-col style="text-align: left">{{ fri.event }}</v-col>
         </v-row>
       </v-container>
       <h2>
+        <br />
         Saturday Feb 5th<br />
-        11:00AM - 10:00PM
+        <small>11:00AM - 10:00PM</small>
       </h2>
       <v-container>
         <v-row :key="sat.id" v-for="sat in saturday">
-          <v-col md="4" style="text-align: right">{{ sat.time }}</v-col>
+          <v-col sm="4" md="4" style="text-align: right">{{ sat.time }}</v-col>
           <v-col style="text-align: left">{{ sat.event }}</v-col>
         </v-row>
       </v-container>
       <h2>
+        <br />
         Sunday Feb 6th<br />
-        11:00AM - 6:00PM
+        <small>11:00AM - 6:00PM</small>
       </h2>
       <v-container>
         <v-row :key="sun.id" v-for="sun in sunday">
-          <v-col md="4" style="text-align: right">{{ sun.time }}</v-col>
+          <v-col sm="4" md="4" style="text-align: right">{{ sun.time }}</v-col>
           <v-col style="text-align: left">{{ sun.event }}</v-col>
         </v-row>
       </v-container>
@@ -67,7 +69,6 @@ export default {
           return;
         }
         records.forEach((record) => {
-          console.log("Retrieved", record);
           if (record.get("Day") === "Friday") {
             this.friday.push({
               id: record.id,

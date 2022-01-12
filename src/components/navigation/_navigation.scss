@@ -32,6 +32,11 @@
   text-transform: uppercase;
   font-weight: 600;
   padding-left: 0; // override vuetify
+  max-width: 960px;
+  width: 100%;
+  li {
+    flex: auto;
+  }
   a {
     color: black !important;
     font-family: "Segoe UI", "Roboto";
