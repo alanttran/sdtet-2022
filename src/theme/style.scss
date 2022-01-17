@@ -7,6 +7,7 @@ body {
 .theme--light.v-application {
   background-color: #e4b675;
   color: #201c20;
+  background-image: url("assets/background.png");
 }
 h1,
 h2,
@@ -117,13 +118,6 @@ a {
   background-image: url(./assets/tiger-banner-2.png);
   background-position: center center;
   background-size: cover;
-}
-
-.ox-footer {
-  background-image: url(./assets/ox-footer.png);
-  background-position: center center;
-  margin-top: 100px;
-  height: 300px;
 }
 
 .sdtet-container {

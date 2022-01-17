@@ -4,21 +4,18 @@
       <h1>Directions & Contact Info</h1>
     </div>
     <v-container fluid>
-      <v-layout row wrap>
-        <v-flex xs12 md7>
-          <div class="sdtet-directions-map-container">
-            <iframe
-              class="google-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.3928305391737!2d-117.14276428457252!3d32.91421798428374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf8ef08e79507%3A0x87ecc78a5488dfe7!2sMira+Mesa+Community+Park!5e0!3m2!1sen!2sus!4v1515044692236"
-              width="475"
-              height="475"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen
-            ></iframe>
-          </div>
+      <v-layout>
+        <v-flex xs12 sm7 md7 class="sdtet-directions-map-container">
+          <iframe
+            style="width: 95%; border: 0"
+            class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.3928305391737!2d-117.14276428457252!3d32.91421798428374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf8ef08e79507%3A0x87ecc78a5488dfe7!2sMira+Mesa+Community+Park!5e0!3m2!1sen!2sus!4v1515044692236"
+            frameborder="0"
+            allowfullscreen
+            height="475"
+          ></iframe>
         </v-flex>
-        <v-flex xs12 md5>
+        <v-flex xs12 sm5 md5>
           <div class="sdtet-directions-text-container">
             <div class="sdtet-directions-text">
               <div class="sdtet-directions-text-bold">

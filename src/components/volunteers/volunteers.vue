@@ -75,6 +75,13 @@
                 <p>Optional: Hours Verification Form</p>
               </v-card>
             </v-layout>
+            <p>
+              <img
+                style="width: 100%; max-width: 300px; margin-top: 20px"
+                src="../../assets/volunteers.png"
+                alt=""
+              />
+            </p>
           </div>
           <br />
         </v-flex>

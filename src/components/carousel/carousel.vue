@@ -180,7 +180,7 @@
         <p>Questions? Email us at <b>info@sdtet.com</b></p>
         <p style="text-align: center">
           <v-btn
-            style="width: 350px"
+            style="max-width: 350px"
             href="https://www.paypal.com/fundraiser/charity/1440775"
             target="_blank"
             rounded

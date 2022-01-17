@@ -7,93 +7,88 @@ $sdtet-schedule-text-shadow: -1px -1px 2px white, 1px -1px 2px white,
 
 @mixin schedule-image-font {
   font-weight: 600;
-  font-size: 22px;
-  -webkit-text-stroke: 1px #263238;
-  -webkit-text-fill-color: #ffc400;
+  font-size: 32px;
+  font-family: "Dancing Script";
 }
 
 @mixin schedule-background-image {
   position: absolute;
   z-index: 0;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 959px) {
     display: none;
   }
 }
 
 .sdtet-schedule-image-1 {
-  //background-image: url('../../assets/new-wave-tour.png');
+  background-image: url("../../assets/LamAnh.png");
   background-size: contain;
-  top: calc(50% + 5px);
-  left: 40px;
-  width: 500px;
+  bottom: 45px;
+  right: 100px;
+  width: 200px;
   height: 250px;
   @include schedule-background-image;
   &:before {
-    content: "New Wave Tour";
+    content: "Lam Anh";
     position: absolute;
-    bottom: -30px;
-    left: 50px;
+    bottom: -40px;
+    left: 40px;
     @include schedule-image-font;
-    font-size: 24px;
   }
 }
 
 .sdtet-schedule-image-2 {
-  //background-image: url('../../assets/vvhatever.jpg');
+  background-image: url("../../assets/AndyQuach.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 105%;
   @include schedule-background-image;
-  top: calc(37% + 5px);
-  left: 270px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  bottom: 50px;
+  right: 300px;
+  width: 175px;
+  height: 230px;
   &:before {
-    content: "V.Vhatever";
+    content: "Andy Quach";
     position: absolute;
-    bottom: -35px;
-    left: 0px;
+    bottom: -45px;
+    left: 20px;
     @include schedule-image-font;
   }
 }
 
 .sdtet-schedule-image-3 {
-  //background-image: url('../../assets/lilybui.jpg');
+  background-image: url("../../assets/AiNi.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 125%;
-  top: calc(32% + 5px);
-  left: 130px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  background-position: center 10%;
+  background-size: 170%;
+  top: calc(22% + 5px);
+  left: 430px;
+  width: 200px;
+  height: 300px;
   @include schedule-background-image;
   &:before {
-    content: "Lily Bee";
+    content: "Ai Ni";
     position: absolute;
-    bottom: -35px;
-    left: 11px;
+    bottom: -45px;
+    left: 80px;
     @include schedule-image-font;
   }
 }
 
 .sdtet-schedule-image-4 {
-  //background-image: url('../../assets/BAO.jpg');
+  background-image: url("../../assets/HuynhPhiTien.png");
   background-repeat: no-repeat;
-  background-position: center 10%;
-  background-size: 300%;
-  top: calc(42% + 5px);
-  left: 130px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  background-position: center 5%;
+  background-size: 100%;
+  top: calc(62% + 5px);
+  left: 550px;
+  width: 230px;
+  height: 200px;
   @include schedule-background-image;
   &:before {
-    content: "BAO";
+    content: "Huynh Phi Tien";
     position: absolute;
-    bottom: -35px;
+    bottom: -45px;
     left: 27px;
     @include schedule-image-font;
   }
@@ -103,33 +98,33 @@ $sdtet-schedule-text-shadow: -1px -1px 2px white, 1px -1px 2px white,
   background-image: url("../../assets/stepupdance.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  top: 16%;
-  left: 176px;
-  width: 200px;
+  top: -20px;
+  left: 576px;
+  width: 230px;
   height: 150px;
   @include schedule-background-image;
   &:before {
-    content: "Step Up Dance Competition";
+    content: "Step Up Dance";
     position: absolute;
-    bottom: 50px;
+    bottom: -30px;
     left: 50px;
     @include schedule-image-font;
   }
 }
 
 .sdtet-schedule-image-6 {
-  background-image: url("../../assets/lion-dancing.png");
+  background-image: url("../../assets/GoldenVoice.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  top: 207px;
-  right: 20%;
+  top: 60px;
+  left: 650px;
   width: 250px;
-  height: 212px;
+  height: 150px;
   @include schedule-background-image;
   &:before {
-    content: "Lion Dancing";
+    content: "Golden Voice";
     position: absolute;
-    bottom: 0px;
+    bottom: -50px;
     right: 50px;
     @include schedule-image-font;
   }
@@ -139,54 +134,94 @@ $sdtet-schedule-text-shadow: -1px -1px 2px white, 1px -1px 2px white,
   background-image: url("../../assets/black-leather-couch.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  top: 100px;
-  left: 106px;
-  width: 250px;
+  top: 130px;
+  left: 500px;
+  width: 280px;
   height: 170px;
   @include schedule-background-image;
   &:before {
     content: "Black Leather Couch";
     position: absolute;
-    bottom: 0px;
+    bottom: -50px;
     left: 31px;
     @include schedule-image-font;
   }
 }
 
 .sdtet-schedule-image-8 {
-  //background-image: url('../../assets/green-lantern.png');
+  background-image: url("../../assets/pageant2020.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  top: calc(39% + 5px);
-  right: 200px;
-  width: 250px;
-  height: 415px;
+  top: 50%;
+  left: 440px;
+  width: 300px;
+  height: 150px;
   @include schedule-background-image;
   &:before {
-    content: "Green Lantern: Legacy";
+    content: "MVSD Pageant";
     position: absolute;
-    bottom: 0px;
+    bottom: -40px;
     left: 31px;
     @include schedule-image-font;
   }
 }
 
 .sdtet-schedule-image-9 {
-  //background-image: url('../../assets/gia-huy.png');
+  background-image: url("../../assets/KidsSpotlight.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  bottom: 50px;
-  left: 200px;
+  top: 24%;
+  left: 700px;
   width: 250px;
-  height: 415px;
+  height: 220px;
   @include schedule-background-image;
   &:before {
-    content: "Gia Huy";
+    content: "Kids Got Talent";
     position: absolute;
     bottom: 0px;
-    left: 50px;
+    left: 40px;
     @include schedule-image-font;
   }
+}
+
+.sdtet-schedule-image-10 {
+  background-image: url("../../assets/tiger-firecracker.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 30px;
+  left: 450px;
+  width: 250px;
+  height: 290px;
+  @include schedule-background-image;
+}
+
+.sdtet-schedule-image-11 {
+  background-image: url("../../assets/Twinne.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 30px;
+  left: 480px;
+  width: 100px;
+  height: 100px;
+  @include schedule-background-image;
+  &:before {
+    content: "Twinne";
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+    @include schedule-image-font;
+  }
+}
+
+.sdtet-schedule-image-12 {
+  background-image: url("../../assets/kid-2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 300px;
+  left: 750px;
+  width: 250px;
+  height: 290px;
+  @include schedule-background-image;
 }
 
 .sdtet-schedule-container {

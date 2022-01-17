@@ -51,6 +51,13 @@
             </v-layout>
           </template>
           <div v-else style="max-width: 500px; margin: 0 auto">
+            <p>
+              <img
+                style="max-width: 450px; width: 100%"
+                src="../../assets/vendors.png"
+                alt=""
+              />
+            </p>
             <div style="display: flex; justify-content: center">
               <v-card
                 color="#f0d6b1"

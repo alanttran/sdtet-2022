@@ -58,7 +58,12 @@
   height: 30px;
   margin-left: 20px;
 }
-
+.v-menu__content .v-list {
+  background: #e4b675;
+  a {
+    color: black;
+  }
+}
 @media screen and (max-width: 960px) {
   .sdtet-navigation__links {
     display: none;

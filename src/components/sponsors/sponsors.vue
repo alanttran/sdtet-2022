@@ -8,12 +8,12 @@
           <p v-if="sponsorData.sponsorSignUp">
             <v-btn
               color="#b5741c"
-              style="width: 350px"
+              style="max-width: 350px"
               v-bind:href="sponsorData.applicationURL"
               target="_blank"
               block
               rounded
-              >Download 2022 Sponsorship Application
+              >2022 Sponsorship App
             </v-btn>
           </p>
           <p>
@@ -42,6 +42,11 @@
               <img class="ma-3" :src="sponsor.image" :alt="sponsor.name" />
             </a>
           </v-layout>
+          <img
+            style="height: 400px; margin-top: 30px"
+            src="../../assets/sponsors-lion.png"
+            alt=""
+          />
         </v-flex>
       </v-layout>
     </div>

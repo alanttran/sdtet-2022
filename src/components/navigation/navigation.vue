@@ -35,46 +35,51 @@
           </v-btn>
         </template>
         <v-list>
-          <v-list-tile>
-            <a href="#schedule" v-smooth-scroll
-              ><v-list-tile-title>Schedule</v-list-tile-title></a
-            >
-          </v-list-tile>
-          <v-list-tile>
-            <a href="#pageant" v-smooth-scroll
-              ><v-list-tile-title>Pageant</v-list-tile-title></a
-            >
-          </v-list-tile>
-          <v-list-tile>
-            <a href="#vendors" v-smooth-scroll
-              ><v-list-tile-title>Vendors</v-list-tile-title></a
-            >
-          </v-list-tile>
-          <v-list-tile>
-            <a href="#volunteers" v-smooth-scroll
-              ><v-list-tile-title>Volunteers</v-list-tile-title></a
-            >
-          </v-list-tile>
-          <v-list-tile>
-            <a href="#sponsors" v-smooth-scroll
-              ><v-list-tile-title>Sponsors</v-list-tile-title></a
-            >
-          </v-list-tile>
-          <v-list-tile>
-            <a href="#about" v-smooth-scroll
-              ><v-list-tile-title>About</v-list-tile-title></a
-            >
-          </v-list-tile>
-          <v-list-tile>
-            <a href="#contact" v-smooth-scroll
-              ><v-list-tile-title>Contact</v-list-tile-title></a
-            >
-          </v-list-tile>
-          <v-list-tile>
-            <a href="https://www.paypal.com/fundraiser/charity/1440775"
-              ><v-list-tile-title>Donate</v-list-tile-title></a
-            >
-          </v-list-tile>
+          <v-list-item>
+            <v-list-item-title>
+              <a v-smooth-scroll href="#schedule">Schedule</a>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              <a v-smooth-scroll href="#pageant">Pageant</a>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              <a v-smooth-scroll href="#vendors">Vendors</a>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              <a v-smooth-scroll href="#volunteers">Volunteers</a>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              <a v-smooth-scroll href="#sponsors">Sponsors</a>
+            </v-list-item-title>
+          </v-list-item>
+          <!-- <v-list-item>
+            <v-list-item-title>
+              <a v-smooth-scroll href="#about">About</a>
+            </v-list-item-title>
+          </v-list-item> -->
+          <v-list-item>
+            <v-list-item-title>
+              <a v-smooth-scroll href="#contact">Contact</a>
+            </v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+              <a
+                v-smooth-scroll
+                target="_blank"
+                href="https://www.paypal.com/fundraiser/charity/1440775"
+                >Donate</a
+              >
+            </v-list-item-title>
+          </v-list-item>
         </v-list>
       </v-menu>
     </div>

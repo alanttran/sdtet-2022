@@ -1,9 +1,9 @@
 <template>
-  <section id="covid" style="background: white; border-radius: 5px; padding: 0 3rem 3rem 3rem;">
+  <section id="covid" style="background: white; text-shadow: 2px white; position: relative; border-radius: 5px; padding: 0 3rem 3rem 3rem;">
       <h1 style="text-shadow: none; text-align: center">
         Attendee Information
       </h1>
-      <p>Updated: 1/9/2022</p>
+      <p>Updated: 1/16/2022</p>
       <p>The 2022 San Diego Tet Festival will operate under the following COVID-19 protocols recommended by San Diego County, City of San Diego and California Department of Public Health (CDPH) for an <a target="_blank" href="https://covid19.ca.gov/mega-events/#outdoor-events">Outdoor Mega-event</a>.</p>
       <h2 style="text-shadow: none">Required to Enter</h2>
       <div v-html="covidText"></div>
@@ -28,15 +28,24 @@
         ></li>
         <li><a href="https://covid19.ca.gov/mega-events/#outdoor-events" target="_blank">California Department of Public Health</a></li>
         </ul>
-        
+        <img class="sdtet-image" style="top: 200px; right: 100px; width: 180px" src="../../assets/firecrackers.png" alt="">
+        <img class="sdtet-image" style="bottom: 100px; right: 50px; width: 280px" src="../../assets/kid-1.png" alt="">
         
       </p>
   </section>
 </template>
 
-<style>
+<style lang="scss">
 #covid {
   grid-area: covid;
+}
+
+.sdtet-image {
+  position: absolute;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
 }
 </style>
 
