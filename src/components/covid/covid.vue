@@ -3,8 +3,8 @@
       <h1 style="text-shadow: none; text-align: center">
         Attendee Information
       </h1>
-      <p>Updated: 1/16/2022</p>
-      <p>The 2022 San Diego Tet Festival will operate under the following COVID-19 protocols recommended by San Diego County, City of San Diego and California Department of Public Health (CDPH) for an <a target="_blank" href="https://covid19.ca.gov/mega-events/#outdoor-events">Outdoor Mega-event</a>.</p>
+      <p>Updated: 01/30/2022</p>
+      <p>The 2022 San Diego Tết Festival will operate under the following COVID-19 protocols recommended by San Diego County, City of San Diego and California Department of Public Health (CDPH) for an <a target="_blank" href="https://covid19.ca.gov/mega-events/#outdoor-events">Outdoor Mega-event</a>.</p>
       <h2 style="text-shadow: none">Required to Enter</h2>
       <div v-html="covidText"></div>
       <br/>
@@ -12,6 +12,7 @@
       <p>We are fully committed to keeping everyone as safe as possible. We are also providing...</p>
       <p>
         <ul>
+          <li>On-site antigen testing courtesy of <a target="_blank" href="https://samahanhealth.com/en/">Operation Samahan</a></li>
           <li>Hand sanitizer stations</li>
           <li>Regularly scheduled disinfection of eating areas</li>
           <li>Masks for those who need them</li>

@@ -31,7 +31,7 @@
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn v-bind="attrs" v-on="on" icon large>
-            <v-icon large color="black darken-1">menu</v-icon>
+            <v-icon large color="black darken-1">mdi-menu</v-icon>
           </v-btn>
         </template>
         <v-list>

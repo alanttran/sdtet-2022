@@ -3,6 +3,7 @@ Attendees age 2 and older to provide proof that they:
 - Are <a target="_blank" href="https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/COVID-19/COVID-19-Public-Health-Recommendations-for-Fully-Vaccinated-People.aspx">fully vaccinated</a>, or
 - Prior to arrival, have received a negative COVID-19 test result in the last:
   - 1 day for an antigen test (at-home tests, rapid test), or
+    - On-site antigen tests available
   - 2 days for a PCR test.
 
 <br/>

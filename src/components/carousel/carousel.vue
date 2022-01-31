@@ -1,26 +1,33 @@
 <template>
   <div class="sdtet-jumbotron" id="home">
-    <div class="banner">
+    <div class="banner" style="margin-bottom: 32px">
       <div
         style="
           font-family: 'Oswald', sans-serif;
           text-shadow: 3px 2px 0 #111;
           margin: 0 7% 0 auto;
           text-align: center;
-          padding-top: 38px;
+          padding-top: 14px;
           max-width: 500px;
         "
       >
         <p
           style="
             color: white;
-            font-family: 'Roboto';
+            font-family: 'Arial';
             text-shadow: 2px 1px 0 #111;
           "
         >
-          The <b>Vietnamese American Youth Alliance</b> and
-          <b>Vietnamese Federation of San Diego</b> presents...
+          The <b>Vietnamese American Youth Alliance</b> &
+          <b>Vietnamese Federation of San Diego</b>
         </p>
+        <div>
+          <img
+            style="height: 50px"
+            src="https://sdtet.s3.us-west-1.amazonaws.com/sponsors/barona.png"
+            alt=""
+          />
+        </div>
         <div style="color: white; font-size: 48px">San Diego Tết Festival</div>
         <div style="color: white; font-size: 32px">Hội Chợ Tết San Diego</div>
         <div style="color: white; font-size: 32px"></div>
@@ -28,7 +35,7 @@
       </div>
     </div>
 
-    <div style="overflow: hidden; position: relative">
+    <div style="overflow: hidden; position: relative; display: none">
       <div style="text-align: center">
         <v-alert
           style="max-width: 960px; margin: 16px auto"

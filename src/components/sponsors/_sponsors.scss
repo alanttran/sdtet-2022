@@ -1,12 +1,15 @@
 .sdtet-sponsors-logos-container img {
   width: auto;
-  height: 75px;
-  transition: .5s ease;
-	&:hover{
-		-webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		transform: scale(1.1);
-		transition: .5s ease;
-	}
+  height: 65px;
+  transition: 0.5s ease;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s ease;
+  }
+}
 
+.sdtet-sponsors-logos-container {
+  width: 100%;
 }

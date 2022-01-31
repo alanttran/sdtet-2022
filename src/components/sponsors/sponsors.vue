@@ -27,6 +27,16 @@
           <h1 class="sdtet-h1-spacer">&nbsp;</h1>
           <h2>{{ sponsorData.slogan }}</h2>
           <br />
+          <div class="sdtet-sponsors-logos-container">
+            <a v-for="t in title" :key="t.id" :href="t.href" target="_blank">
+              <img
+                style="height: 100px"
+                class="ma-3"
+                :src="t.image"
+                :alt="t.name"
+              />
+            </a>
+          </div>
           <v-layout
             class="sdtet-sponsors-logos-container"
             row
@@ -34,19 +44,84 @@
             justify-space-around
           >
             <a
-              v-for="sponsor in sponsors"
-              :key="sponsor.id"
-              :href="sponsor.href"
+              v-for="platinum in platinums"
+              :key="platinum.id"
+              :href="platinum.href"
               target="_blank"
             >
-              <img class="ma-3" :src="sponsor.image" :alt="sponsor.name" />
+              <img
+                style="height: 80px"
+                class="ma-3"
+                :src="platinum.image"
+                :alt="platinum.name"
+              />
             </a>
           </v-layout>
-          <img
+          <v-layout
+            class="sdtet-sponsors-logos-container"
+            row
+            wrap
+            justify-space-around
+          >
+            <a
+              v-for="gold in golds"
+              :key="gold.id"
+              :href="gold.href"
+              target="_blank"
+            >
+              <img class="ma-3" :src="gold.image" :alt="gold.name" />
+            </a>
+          </v-layout>
+          <v-layout
+            class="sdtet-sponsors-logos-container"
+            row
+            wrap
+            justify-space-around
+          >
+            <a
+              v-for="silver in silvers"
+              :key="silver.id"
+              :href="silver.href"
+              target="_blank"
+            >
+              <img class="ma-3" :src="silver.image" :alt="silver.name" />
+            </a>
+          </v-layout>
+          <v-layout
+            class="sdtet-sponsors-logos-container"
+            row
+            wrap
+            justify-space-around
+          >
+            <a
+              v-for="bronze in bronzes"
+              :key="bronze.id"
+              :href="bronze.href"
+              target="_blank"
+            >
+              <img class="ma-3" :src="bronze.image" :alt="bronze.name" />
+            </a>
+          </v-layout>
+          <v-layout
+            class="sdtet-sponsors-logos-container"
+            row
+            wrap
+            justify-space-around
+          >
+            <a
+              v-for="other in others"
+              :key="other.id"
+              :href="other.href"
+              target="_blank"
+            >
+              <img class="ma-3" :src="other.image" :alt="other.name" />
+            </a>
+          </v-layout>
+          <!-- <img
             style="height: 400px; margin-top: 30px"
             src="../../assets/sponsors-lion.png"
             alt=""
-          />
+          /> -->
         </v-flex>
       </v-layout>
     </div>
@@ -62,6 +137,12 @@ export default {
   data() {
     return {
       sponsors: [],
+      title: [],
+      platinums: [],
+      golds: [],
+      silvers: [],
+      bronzes: [],
+      others: [],
       sponsorData: data,
       sponsorText: markdown,
     };
@@ -73,7 +154,7 @@ export default {
     base("Sponsors")
       .select({
         view: "Grid view",
-        fields: ["Name", "href", "Attachments"],
+        fields: ["Name", "href", "Attachments", "Type"],
         filterByFormula: "NOT({Active} = '')",
       })
       .firstPage((err, records) => {
@@ -82,13 +163,49 @@ export default {
           return;
         }
         records.forEach((record) => {
-          //console.log("Retrieved", record);
-          this.sponsors.push({
-            id: record.id,
-            name: record.get("Name"),
-            href: record.get("href"),
-            image: record.fields.Attachments[0].url,
-          });
+          if (record.get("Type") === "Title") {
+            this.title.push({
+              id: record.id,
+              name: record.get("Name"),
+              href: record.get("href"),
+              image: record.fields.Attachments[0].url,
+            });
+          } else if (record.get("Type") === "Platinum") {
+            this.platinums.push({
+              id: record.id,
+              name: record.get("Name"),
+              href: record.get("href"),
+              image: record.fields.Attachments[0].url,
+            });
+          } else if (record.get("Type") === "Gold") {
+            this.golds.push({
+              id: record.id,
+              name: record.get("Name"),
+              href: record.get("href"),
+              image: record.fields.Attachments[0].url,
+            });
+          } else if (record.get("Type") === "Silver") {
+            this.silvers.push({
+              id: record.id,
+              name: record.get("Name"),
+              href: record.get("href"),
+              image: record.fields.Attachments[0].url,
+            });
+          } else if (record.get("Type") === "Bronze") {
+            this.bronzes.push({
+              id: record.id,
+              name: record.get("Name"),
+              href: record.get("href"),
+              image: record.fields.Attachments[0].url,
+            });
+          } else {
+            this.others.push({
+              id: record.id,
+              name: record.get("Name"),
+              href: record.get("href"),
+              image: record.fields.Attachments[0].url,
+            });
+          }
         });
       });
   },

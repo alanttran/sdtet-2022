@@ -58,7 +58,7 @@
                 alt=""
               />
             </p>
-            <div style="display: flex; justify-content: center">
+            <div style="display: none; justify-content: center">
               <v-card
                 color="#f0d6b1"
                 height="150"
@@ -97,11 +97,8 @@
               </v-card>
             </div>
             <p>
-              IMPORTANT: Per state of California, San Diego County and City's
-              public health regulations, we ask that
-              <u>all vendors be vaccinated against COVID-19</u> or provide
-              <u>proof of a negative COVID-19 test</u>. Details
-              <a href="#covid">above</a>.
+              Our vendor spots are now full. For any additional questions please
+              contact vendor@sdtet.com
             </p>
           </div>
         </v-flex>
