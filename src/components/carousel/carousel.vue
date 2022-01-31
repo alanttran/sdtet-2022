@@ -202,19 +202,62 @@
         </p>
       </div>
     </div>
+
+    <div
+      v-if="festivalStarts"
+      style="
+        max-width: 960px;
+        max-height: 540px;
+        margin: 0 auto;
+        padding: 56.25% 0 0 0;
+        position: relative;
+      "
+    >
+      <iframe
+        src="https://vimeo.com/event/1739871/embed"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+      ></iframe>
+    </div>
+
+    <div
+      v-if="festivalStarts"
+      style="width: 100%; max-width: 960px; margin: 0 auto"
+      class="embed-container"
+      data-page-width="414"
+      data-page-height="640"
+      id="ypembedcontainer"
+    >
+      <iframe
+        src="https://www.yumpu.com/en/embed/view/ZHmCLxadrD2AfyPS"
+        frameborder="0"
+        allowfullscreen="true"
+        allowtransparency="true"
+      ></iframe
+      ><br /><a
+        href="https://www.yumpu.com/en/document/view/66301395/17th-annual-san-diego-tet-festival"
+        title="17th Annual San Diego Tết Festival"
+        target="_blank"
+        >17th Annual San Diego Tết Festival</a
+      >
+    </div>
   </div>
 </template>
 
+<script src="https://players.yumpu.com/modules/embed/yp_r_iframe.js"></script>
 <script>
 export default {
   data() {
     return {
+      festivalStarts: false,
       items: [
         {
-          src: "./static/carousel/blossoms-banner.png",
+          src: "../static/carousel/blossoms-banner.png",
         },
         {
-          src: "./static/carousel/fans.jpg",
+          src: "../static/carousel/fans.jpg",
         },
       ],
     };
@@ -224,10 +267,33 @@ export default {
       this.$emit("showModal");
     },
   },
+  created() {
+    var moment = require("moment");
+    var festivalStart = moment("Feb 4, 2022 5:00 PM");
+    if (moment().diff(festivalStart) > 0) {
+      this.festivalStarts = true;
+    }
+  },
 };
 </script>
 
 <style lang="scss">
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .sdtet-banner-message {
   padding-left: 20px;
   padding-right: 20px;

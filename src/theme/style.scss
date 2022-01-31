@@ -7,7 +7,7 @@ body {
 .theme--light.v-application {
   background-color: #e4b675;
   color: #201c20;
-  background-image: url("assets/background.png");
+  background-image: url(../assets/background.png);
 }
 h1,
 h2,
@@ -115,7 +115,7 @@ a {
 
 .banner {
   height: 350px;
-  background-image: url(./assets/tiger-banner-2.png);
+  background-image: url(../assets/tiger-banner-2.png);
   background-position: center center;
   background-size: cover;
 }

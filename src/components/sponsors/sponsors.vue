@@ -213,5 +213,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "sponsors";
+@import "./sponsors";
 </style>
