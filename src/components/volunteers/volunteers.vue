@@ -19,7 +19,7 @@
             <div v-if="!volunteerData.signups_open">
               <p>
                 <span class="navy">
-                  <b>Signups TBD!</b>
+                  <b>Signups closed!</b>
                 </span>
               </p>
               <div class="sdtet-h1-spacer">

@@ -204,6 +204,7 @@
     </div>
 
     <div
+      class="live-elements"
       v-if="festivalStarts"
       style="
         max-width: 960px;
@@ -224,8 +225,8 @@
 
     <div
       v-if="festivalStarts"
-      style="width: 100%; max-width: 960px; margin: 0 auto"
-      class="embed-container"
+      style="width: 100%; max-width: 960px !important; margin: 0 auto"
+      class="embed-container live-elements"
       data-page-width="414"
       data-page-height="640"
       id="ypembedcontainer"
@@ -303,6 +304,10 @@ export default {
     font-size: 2.5em;
   }
   .sdtet-message-1 {
+    display: none;
+  }
+
+  .live-elements {
     display: none;
   }
 }

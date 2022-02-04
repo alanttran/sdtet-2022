@@ -15,5 +15,9 @@ export default new Router({
       path: "/live",
       component: Live,
     },
+    {
+      path: "*",
+      component: Home,
+    },
   ],
 });

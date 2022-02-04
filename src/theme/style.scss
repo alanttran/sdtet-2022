@@ -114,10 +114,11 @@ a {
 }
 
 .banner {
-  height: 350px;
+  min-height: 350px;
   background-image: url(../assets/tiger-banner-2.png);
   background-position: center center;
   background-size: cover;
+  padding-bottom: 1rem;
 }
 
 .sdtet-container {
