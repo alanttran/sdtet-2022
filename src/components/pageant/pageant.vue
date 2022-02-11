@@ -15,7 +15,7 @@
           >Sign up for Pageant 2020!</v-btn
         >
       </div>
-      <div>
+      <div hidden>
         <p>
           <span class="navy"
             ><b
@@ -36,19 +36,10 @@
       <div class="ms-vn-text" v-html="pageantText"></div>
     </div>
     <br />
-    <h1 class="sdtet-text-align-center">Royal Court 2021</h1>
-    <h2 class="sdtet-text-align-center">{{ pageantData.slogan }}</h2>
-    <div class="sdtet-text-align-center">
-      <img
-        alt="Miss Vietnam San Diego Logo"
-        style="width:100%"
-        src="../../assets/msvn-court.png"
-      />
-    </div>
     <!-- <div style="max-width: 750px; margin: 0 auto">
       <iframe width="100%" height="415" src="https://www.youtube.com/embed/HJZmvB7tIOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div><br/> -->
-    <h1 class="sdtet-text-align-center">2022 Contestants!</h1>
+    <h1 class="sdtet-text-align-center">Congratulations to our 2022 Court!</h1>
     <div style="margin-left: 12%" v-if="voting">
         <p>Miss People's Choice Rules:
     <ol>

@@ -1,5 +1,5 @@
 <template>
-  <section id="covid" style="background: white; text-shadow: 2px white; position: relative; border-radius: 5px; padding: 0 3rem 3rem 3rem;">
+  <section id="covid" style="background: white; margin-top: 32px; text-shadow: 2px white; position: relative; border-radius: 5px; padding: 0 3rem 3rem 3rem;">
       <h1 style="text-shadow: none; text-align: center">
         Attendee Information
       </h1>

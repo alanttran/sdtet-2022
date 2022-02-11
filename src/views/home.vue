@@ -2,7 +2,7 @@
   <v-main>
     <navigation></navigation>
     <carousel></carousel>
-    <covid></covid>
+    <!-- <covid></covid> -->
     <schedule></schedule>
     <!-- <entertainment></entertainment>-->
     <pageant></pageant>
@@ -18,7 +18,7 @@
 import markdown from "../press-release-2021.md";
 import navigation from "../components/navigation/navigation.vue";
 import carousel from "../components/carousel/carousel.vue";
-import covid from "../components/covid/covid.vue";
+//import covid from "../components/covid/covid.vue";
 import schedule from "../components/schedule/schedule.vue";
 // // //import entertainment from "./components/entertainment/entertainment.vue";
 import pageant from "../components/pageant/pageant.vue";
@@ -33,7 +33,7 @@ export default {
   components: {
     navigation,
     carousel,
-    covid,
+    //covid,
     schedule,
     pageant,
     vendors,

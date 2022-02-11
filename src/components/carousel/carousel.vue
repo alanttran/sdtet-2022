@@ -202,7 +202,22 @@
         </p>
       </div>
     </div>
-
+    <div style="max-width: 960px; margin: 0 auto; text-align: center">
+      <h1 style="text-shadow: none">Thank you for coming!</h1>
+      <p>
+        Thank you everyone for attending our festival during this difficult
+        pandemic. We couldn't have imagined this amazing turnout when we started
+        planning just a few months ago. We really want to keep this tradition
+        going. Please help us by
+        <a
+          target="_blank"
+          href="https://www.paypal.com/fundraiser/charity/1440775"
+          >donating</a
+        >
+        and we'll see you next year on <b>January 20-22, 2023</b>! Chúc mừng năm
+        mới!
+      </p>
+    </div>
     <div
       class="live-elements"
       v-if="festivalStarts"
@@ -222,9 +237,27 @@
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
       ></iframe>
     </div>
-
     <div
+      class="live-elements"
       v-if="festivalStarts"
+      style="
+        max-width: 960px;
+        padding-top: 16px;
+        text-align: center;
+        margin: 0 auto;
+      "
+    >
+      <p style="display: flex; justify-content: center; align-items: center">
+        Livestream internet sponsored by
+        <a target="_blank" href="https://otrmobile.com/"
+          ><img
+            style="height: 30px; margin-left: 16px"
+            src="../../assets/OTR-logo.png"
+            alt=""
+        /></a>
+      </p>
+    </div>
+    <div
       style="width: 100%; max-width: 960px !important; margin: 0 auto"
       class="embed-container live-elements"
       data-page-width="414"
@@ -272,7 +305,7 @@ export default {
     var moment = require("moment");
     var festivalStart = moment("Feb 4, 2022 5:00 PM");
     if (moment().diff(festivalStart) > 0) {
-      this.festivalStarts = true;
+      this.festivalStarts = false;
     }
   },
 };
@@ -304,10 +337,6 @@ export default {
     font-size: 2.5em;
   }
   .sdtet-message-1 {
-    display: none;
-  }
-
-  .live-elements {
     display: none;
   }
 }
