@@ -13,7 +13,7 @@
               target="_blank"
               block
               rounded
-              >2022 Sponsorship App
+              >2023 Sponsorship App
             </v-btn>
           </p>
           <p>

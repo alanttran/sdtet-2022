@@ -1,8 +1,8 @@
 {
-	"title": "Miss Vietnam of San Diego™",
-	"pageant_year": "2020",
-	"slogan": "",
-	"voting": false,
-	"signups_open": true,
-	"signups_close_date": "2019-10-29"
+  "title": "Miss Vietnam of San Diego™",
+  "pageant_year": "2020",
+  "slogan": "",
+  "voting": false,
+  "signups_open": false,
+  "signups_close_date": "2019-10-29"
 }

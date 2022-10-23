@@ -58,11 +58,12 @@
                 alt=""
               />
             </p>
-            <div style="display: none; justify-content: center">
+            <p>Applications are now open for 2023!</p>
+            <div style="display: flex; justify-content: center">
               <v-card
                 color="#f0d6b1"
                 height="150"
-                href="https://bit.ly/3C0penX"
+                href="https://forms.gle/uZUHAv5EtXhZzoLF9"
                 outlined
                 target="_blank"
                 rounded
@@ -75,12 +76,12 @@
                     >mdi-storefront-outline</v-icon
                   >
                 </p>
-                <p>2022 Vendor Application</p>
+                <p>2023 Vendor Application</p>
               </v-card>
               <v-card
                 color="#f0d6b1"
                 height="150"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSeS0ymzHzoZEWQHzMTYqrXXDCY00LR_b2CYterqOS_gfEvhlw/viewform"
+                href="https://forms.gle/2hH1Yd7BgLMsG7VD6"
                 outlined
                 target="_blank"
                 rounded
@@ -93,13 +94,13 @@
                     >mdi-food</v-icon
                   >
                 </p>
-                <p>2022 Food Vendor Application</p>
+                <p>2023 Food Vendor Application</p>
               </v-card>
             </div>
-            <p>
+            <!-- <p>
               Our vendor spots are now full. For any additional questions please
               contact vendor@sdtet.com
-            </p>
+            </p> -->
           </div>
         </v-flex>
       </v-layout>

@@ -2,15 +2,62 @@
   <v-main>
     <navigation></navigation>
     <carousel></carousel>
-    <!-- <covid></covid> -->
     <schedule></schedule>
-    <!-- <entertainment></entertainment>-->
     <pageant></pageant>
     <vendors></vendors>
     <volunteers></volunteers>
     <sponsors></sponsors>
-    <!--<about></about> -->
     <directions></directions>
+    <v-dialog v-model="dialog" width="500" overlay-opacity="0.5">
+      <v-card>
+        <v-card-title class="headline grey lighten-2" primary-title>
+          New Website in Progress
+        </v-card-title>
+
+        <v-card-text>
+          <br />
+          <img
+            style="display: block; margin: 0 auto; width: 200px"
+            src="../assets/cat-bunny.jpg"
+          />
+          <p>
+            The San Diego Tet Festival is excited to return on
+            <b>January 27-29, 2023</b>! While we are updating the website for
+            Year of the Cat/Rabbit, our vendor & sponsor applications are open!
+            The old site will also have the updated links. If you have any
+            questions, don't hesitate to reach out to <b>info@sdtet.com</b>.
+          </p>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://sdtet.s3.us-west-1.amazonaws.com/documents/VAYA_Tet_Sponsorship_2023.pdf"
+                >Sponsor</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://forms.gle/2hH1Yd7BgLMsG7VD6"
+                >Food Vendor</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://forms.gle/uZUHAv5EtXhZzoLF9"
+                >Non-food Vendor</a
+              >
+            </li>
+          </ul>
+        </v-card-text>
+
+        <v-divider></v-divider>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="dialog = false"
+            >Continue to old site</v-btn
+          >
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-main>
 </template>
 
@@ -44,7 +91,7 @@ export default {
   },
   data() {
     return {
-      dialog: false,
+      dialog: true,
       pressReleaseText: markdown,
       timeLeft: "",
     };

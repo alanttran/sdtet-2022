@@ -4,18 +4,6 @@
     <h1 class="sdtet-text-align-center">{{ pageantData.title }}</h1>
     <div class="sdtet-text-align-center">
       <div hidden>
-        <v-btn
-          href="https://forms.gle/dB2hLkfNsWqXo4Y58"
-          target="_blank"
-          large
-          rounded
-          color="teal"
-          dark
-          v-smooth-scroll
-          >Sign up for Pageant 2020!</v-btn
-        >
-      </div>
-      <div hidden>
         <p>
           <span class="navy"
             ><b
